@@ -10,7 +10,6 @@
                 </div>
                 <form class="py-10 px-5" method="POST" action="{{ route('login') }}">
                     @csrf
-
                     <div class="flex flex-wrap mb-6">
                         <label for="email" class="block text-gray-700 text-sm mb-2">{{ __('E-Mail Address') }}</label>
                         <input id="email" type="email"
@@ -24,7 +23,7 @@
                         @enderror
                     </div>
 
-                    <div class="form-group row">
+                    <div class="flex flex-wrap mb-6">
                         <label for="password" class="block text-gray-700 text-sm mb-2">{{ __('Password') }}</label>
                         <input id="password" type="password"
                             class="p-3 bg-gray-200 rounded form-input w-full focus:outline-none  @error('password') is-invalid @enderror"
