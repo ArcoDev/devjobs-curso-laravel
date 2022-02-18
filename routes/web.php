@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]); //TODAS LAS RUTAS QUE ESTEN PROTEGUIDAS, SE TRENDRAN QUE VERIFICAR
 
 Route::get('/home', 'HomeController@index')->name('home');
