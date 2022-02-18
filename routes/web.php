@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]); //TODAS LAS RUTAS QUE ESTEN PROTEGUIDAS, SE TRENDRAN QUE VERIFICAR
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//RUTAS DE VACANTES
+Route::get('/vacantes', 'VacanteController@index')->name('vacantes.index');
