@@ -21077,6 +21077,12 @@ video {
           animation: bounce 1s infinite;
 }
 
+.circle-online {
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

@@ -29,7 +29,7 @@
                     <a class="text-2xl text-white" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
-                    <nav class="flex-1 text-right">
+                    <nav class="flex justify-end gap-3 flex-1 text-right">
                         @guest
                         <a class="text-white no-underline hover:text-teal-300 p-3"
                             href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -38,7 +38,7 @@
                             href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                         @else
-                        <span class="text-gray-300 text-sm pr-4">
+                        <span class="text-gray-300 text-sm mt-3">
                             {{ Auth::user()->name }}
                         </span>
                         <div class="no-underline text-gray-300 text-sm p-3" aria-labelledby="navbarDropdown">
@@ -55,6 +55,13 @@
                 </div>
             </div>
         </nav>
+
+        <div class="bg-gray-600">
+            <nav class="container mx-auto flex space-x-1">
+                @yield('navegacion')
+            </nav>
+        </div>
+
         <main class="py-4">
             @yield('content')
         </main>

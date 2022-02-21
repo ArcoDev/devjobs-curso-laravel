@@ -20,7 +20,7 @@ class VacanteController extends Controller
 
     public function index()
     {
-        return "Desde vacantescontroller@index";
+        return view('vacantes.index');
     }
 
     /**
@@ -30,7 +30,7 @@ class VacanteController extends Controller
      */
     public function create()
     {
-        //
+        return view('vacantes.create');
     }
 
     /**
