@@ -21078,9 +21078,85 @@ video {
 }
 
 .circle-online {
-  width: 20px;
-  height: 20px;
-  background-color: greenyellow;
+  position: relative;
+}
+
+.circle-online::before {
+  content: "";
+  position: absolute;
+  top: 2.3px;
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: greenyellow;
+}
+
+.medium-editor-toolbar-active {
+  background: rgb(56, 178, 172, var(--bg-opacity));
+  color: white;
+}
+
+.medium-editor-element,
+.description {
+  min-height: 300px;
+}
+
+.medium-editor-element ol,
+.medium-editor-element ul,
+.medium-editor-element h1,
+.medium-editor-element h2,
+.medium-editor-element h3,
+.medium-editor-element p,
+.medium-editor-element a,
+.description ol,
+.description ul,
+.description h1,
+.description h2,
+.description h3,
+.description p,
+.description a {
+  color: #4a5568;
+}
+
+.medium-editor-element ol,
+.medium-editor-element ul,
+.description ol,
+.description ul {
+  padding-left: 50px;
+}
+
+.medium-editor-element ol,
+.description ol {
+  list-style: decimal;
+}
+
+.medium-editor-element ul,
+.description ul {
+  list-style: dic;
+}
+
+.medium-editor-element h2,
+.medium-editor-element h3,
+.description h2,
+.description h3 {
+  margin: 1rem 0;
+}
+
+.medium-editor-element h2,
+.description h2 {
+  font-size: 1.8rem;
+}
+
+.medium-editor-element h3,
+.description h3 {
+  font-size: 2.2rem;
+}
+
+.medium-editor-element p,
+.description p {
+  font-size: 1rem;
+  line-height: 2;
 }
 
 @media (min-width: 640px){

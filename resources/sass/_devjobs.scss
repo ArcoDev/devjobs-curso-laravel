@@ -1,0 +1,67 @@
+// NAV LOGIN
+.circle-online {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 2.3px;
+        left: -15px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: greenyellow;
+    }
+}
+
+// EDITOR
+.medium-editor-toolbar-active {
+    background: rgb(56, 178, 172, var(--bg-opacity));
+    color: white;
+}
+
+.medium-editor-element,
+.description {
+    min-height: 300px;
+
+    ol,
+    ul,
+    h1,
+    h2,
+    h3,
+    p,
+    a {
+        color: #4a5568;
+    }
+
+    ol,
+    ul {
+        padding-left: 50px;
+    }
+
+    ol {
+        list-style: decimal;
+    }
+
+    ul {
+        list-style: dic;
+    }
+
+    h2,
+    h3 {
+        margin: 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+}

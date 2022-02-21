@@ -17,6 +17,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    @yield('styles')
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -38,7 +40,7 @@
                             href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                         @else
-                        <span class="text-gray-300 text-sm mt-3">
+                        <span class="text-gray-300 text-sm mt-3 circle-online">
                             {{ Auth::user()->name }}
                         </span>
                         <div class="no-underline text-gray-300 text-sm p-3" aria-labelledby="navbarDropdown">
@@ -66,6 +68,9 @@
             @yield('content')
         </main>
     </div>
+
+    @yield('scripts')
+
 </body>
 
 </html>
